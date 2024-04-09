@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Cách 1
+        function sum(array) {
+            let total = 0;
+            for (let i = 0; i < array.length; i++){
+                total += array[i];
+            }
+            return total;
+        }
+        console.log(sum([1, 2, 3, 4, 5, 6]));
+
+        // Cách 2
+        function sum(array){
+            return array.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+        }
+        console.log(sum([1, 2, 3, 4, 5, 6]));
+    </script>
+</body>
+</html>

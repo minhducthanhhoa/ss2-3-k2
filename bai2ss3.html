@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const number = 10;
+        const arr = [1,2,3];
+
+        number = 20;
+        arr.push(4);
+
+        console.log(number);
+        console.log(arr);
+        /*
+            Kết quả: Lỗi 
+            Giải thích: Vì không thể gán lại giá trị cho 1 biến được khai báo bằng từ khóa const, const dùng để khai báo 1 hằng số, ko thay đổi được
+        */
+    </script>
+</body>
+</html>

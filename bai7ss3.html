@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mergeObjects(...objects) {
+            return objects.reduce((mergedObject, currentObject) => {
+                return { ...mergedObject, ...currentObject };
+            }, {});
+        }
+
+            const obj1 = { name: 'John', age: 25 };
+            const obj2 = { age: 30, city: 'New York' };
+            const obj3 = { gender: 'Male' };
+
+            const merged = mergeObjects(obj1, obj2, obj3);
+            console.log(merged);
+    </script>
+</body>
+</html>
